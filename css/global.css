@@ -1,0 +1,35 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-size:14px;
+	font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,STHeiti;
+}
+a{
+	text-decoration: none;
+}
+.clearfix::before, .clearfix::after{
+	content: "";
+	display: table;
+}
+.clearfix::after{
+	clear: both;
+	overflow: hidden;
+}
+
+.msg{
+	display: inline-block;
+	float:right;
+	text-align: center;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	   -moz-border-radius:3px;
+        -ms-border-radius:3px;
+         -o-border-radius:3px;
+	border: 1px solid #1494c5;
+}
+.msg a{
+	display: block;
+	color:#44cafd;
+}
