@@ -1,40 +1,52 @@
-@media (min-width: 768px){
-	.topbar,.navbar,.main,.footer-nav,.message,.video{
-		width: 768px;
-		margin: 0 auto;
-	}
-	.ds-carousel ul,.ds-carousel1{
-    height: 356px;
-	}
+
+*{
+	margin: 0px;
+	padding: 0px;
 }
-@media (min-width: 992px){
-	.topbar,.navbar,.main,.footer-nav,.message,.video{
-		width: 992px;
-		margin: 0 auto;
-	}
-	.ds-carousel ul,.ds-carousel1{
-    height: 502px;
-	}
-}
-@media (min-width: 1200){
-	.topbar,.navbar,.main,.footer-nav,.message,.video{
-		width: 1200px;
-		margin: 0 auto;
-	}
-	.ds-carousel ul,.ds-carousel1{
-    height: 599px;
-	}
+ li{
+ 	list-style: none;
  }
 
-/*.topbar,.navbar,.main,.footer-nav,.message{
-	width: 1185px;
+@media (max-width: 959px){.topbar,.navbar,.main,.service,.footer-nav,.message{
+	width: 959px;
 	margin: 0 auto;
-}*/
+	overflow: hidden;
+}
+}
+@media (min-width: 960px){.topbar,.navbar,.main,.service,.footer-nav,.message{
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+}
+@media (min-width: 1000px){ .topbar,.navbar,.main,.service,.footer-nav,.message{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+}
+@media (min-width: 1086px){ .topbar,.navbar,.main,.service,.footer-nav,.message{
+	width: 1086px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+}
+@media (min-width: 1200){ .topbar,.navbar,.main,.service,.footer-nav,.message{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+ }
+
+/*header开始*/
 .header{
 	padding: 0 2rem;
 	border-bottom: 1px solid #e5e5e5;
 }
-
+/*topbar 开始*/
+/*.topbar{
+	line-height:30px;
+}*/
 .topbar-location{
 	float:left;
 }
@@ -67,7 +79,6 @@
 	display: block;
 }
 .topbar-location dd li{
-	list-style: none;
 	float: left;
 }
 .topbar-location dd li a{
@@ -92,7 +103,7 @@
     background: url(../images/personal0.png) no-repeat;
     background-size: 1.8rem;
 }
-/*loginbar 结束*/
+/*topbar 结束*/
 
 /*navbar开始*/
 .navbar{
@@ -119,13 +130,23 @@
 	display:block;
 	padding: 0.5rem 1rem;
 	color: #999;
+/*=======
+	padding-left:300px; 
+>>>>>>> jingxiaofang:*/
 }
-.nav ul li a.active{
-	color: 	#FFCF46;
+.nav a {
+    display: block;
+    padding: 0 10px;
+    color: #999;
+    line-height: 30px;
+    height: 30px;
 }
-.nav ul li a:hover{
-	color: 	#FFCF46;
+.nav ul li:first-child a,.nav a:hover{
+    color:#FFCF46;
 }
+.nav li{
+    float: left;
+} 
 
 .search input{
     border-radius: 0.6rem;
@@ -139,14 +160,28 @@
     background-size: 1.3rem;
 }
 /*navbar结束*/
+/*header结束*/
 
 /**carousel start**/
 .carousel{
 	position: relative;
+    height: 640px;
+    overflow: hidden;
+}
+.carousel:hover .turn-arrow{
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.carousel a{
+    display: block;
 }
 .carousel-box{
-  height: 64rem;
+    height: 64rem;
 	overflow: hidden;
+    position: relative;
+    width: 128.0rem;
+	margin: 0 auto;
 }
 
 .carousel-box ul {
@@ -154,40 +189,48 @@
 }
 .carousel-box ul li{
 	float: left;
-	width: 121.6rem;
-}
-.carousel-box ul li a img{
-	width: 100%;
-	height: 64rem;
+	width: 128.0rem;
 }
 .turn-arrow a{
 	height: 10rem;
 	position: absolute;
 	top: 50%;
-  margin-top: -5rem;
-  background: rgba(0,0,0,.2);
+    margin-top: -5rem;
 	z-index: 1;
 	background: url('./../images/turn-left.png') no-repeat 50% 50%;
 	width: 6.4rem;
-	background-color: rgba(45, 45, 45, 0.5);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.carousel-box ul li a img{
+	width: 100%;
+	height: 640px;
+}
+.turn-arrow{
+  opacity: 0;
 }
 
 .turn-arrow a:first-child{
-	left: 8%;
+	left: 4%;
 }
 .turn-arrow a:last-child{
-	right: 8%;
+	right: 4%;
 	-webkit-transform: rotate(180deg);
 	-webkit-transform-origin: 50% 50%;
+	-moz-transform: rotate(180deg);
+	-moz-transform-origin: 50% 50%;
+	-ms-transform: rotate(180deg);
+	-ms-transform-origin: 50% 50%;
+	-o-transform: rotate(180deg);
+	-o-transform-origin: 50% 50%;
 }
 
 .carousel:hover .turn-ico{
 	opacity: 1;
-	transition:opacity 1s;
-	-webkit-transition:opacity 1s;
-	   -moz-transition:opacity 1s;
-	   	-ms-transition:opacity 1s;
-	   	 -o-transition:opacity 1s;
+	transition:opacity 0.5s;
+	-webkit-transition:opacity 0.5s;
+	   -moz-transition:opacity 0.5s;
+	   	-ms-transition:opacity 0.5s;
+	   	 -o-transition:opacity 0.5s;
 }
 .carousel:hover .turn-left,.turn-right{
 	z-index: 1999;
@@ -211,24 +254,27 @@
 	background: #fff;
 }
 .go{
-	line-height: 3.6rem;
+	line-height: 3rem;
 	background: #fff;
-	margin-top: -1.8rem;
+	margin-top: -1.5rem;
 	position: absolute;
-	right: 3%;
+	right: 4%;
 	top: 50%;
 	margin-left: -18.2rem;
 }
 .go a{
-	width: 18rem;
-  height: 3.6rem;
+	width: 14.7rem;
+  height: 3rem;
 }
 /*carousel结束*/
 
 /*main开始*/
+
+
+/*class-title开始*/
 .class-title{
 	text-align: center;
-	margin: 8rem 0;
+	padding: 80px 0px;
 }
 .class-title p{
 	line-height: 2.5rem;
@@ -242,6 +288,7 @@
 	color: #44cafd;
 	line-height: 2.5rem;
 }
+/*class-title结束*/
 
 /*recommend-content开始*/
 .recommend-container{
@@ -250,10 +297,10 @@
 }
 
 .recommend{
-  flex: 1;
-  width: 33%;
-  padding-right: 6%;
-  box-sizing: border-box;
+    flex: 1;
+    width: 33.33%;
+    padding-right: 70px;
+    box-sizing: border-box;
 }
 .recommend:nth-child(3n) {
 	padding-right: 0;
@@ -298,24 +345,27 @@
 
 /*video开始*/
 .video{
-	height: 46rem;
 	margin: 0 auto;
 	overflow: hidden;
 }
 .video img{
 	width: 100%;
 }
+
+/*service开始*/
 .service h1{
 	margin: 8rem 0;
 	text-align: center;
 	color: #f5d742;
 }
+.service ul{
+	display: flex;
+}
 .service ul li{
-    list-style: none;
-    float: left;
-    width: 23%;
+    flex: 1;
+    width: 25%;
     text-align: center;
-    margin-right: 2.65%;
+    padding-right: 100px;
     box-sizing: border-box;
 
 }
@@ -348,58 +398,67 @@
 .service4{
 	background: url(../images/feiyong.png) no-repeat 50% 50%;
 }
+/*service结束*/
+
+
 /*designer开始*/
-.designer-title{
-	text-align: center;
+
+.designer{
+    background: #fff;
 }
-.designer-msg{
-	display: flex;
+.designer-title{
+    text-align: center;
+}
+.designer-box{
+    display: flex;
 }
 
-.ds-msg-left{
+.designer-left{
 	box-sizing: border-box;
-  width:57%;
-  padding-right: 3%;
-  flex: 1;
+    flex: 1;
+    width:60%;
+    margin-right: 100px;
 }
-.ds-list{
-	margin: 1rem 0;
-	border-bottom:1px  dotted  #ddd;
+
+.designer-list{
+	padding:0px 1rem;
+    border-bottom:1px  dotted  #ddd;
 }
-.ds-list-last{
-	border: none;
+.designer-list:last-child{
+    border: none;
 }
-.ds-list ul{
-	display: flex;
+.designer-list ul{
+    display: flex;
+    padding: 10px 0px;
 }
-.ds-list ul li{
+.designer-list ul li{
     flex: 1;
     list-style: none;
     text-align: center;
     width: 33.33%;
-    padding-right: 1%;
+    padding-right: 5px;
 }
-.ds-list ul li:last-child{
-	padding-right: 0;
+.designer-list ul li:last-child{
+    padding-right: 0px;
 }
-.ds-list ul li img{
-	width: 100%;
+.designer-list ul li img{
+    width: 100%;
 }
-.ds-pieces{
-	margin: 2rem auto;
+.designer-pieces{
+	margin-top:10px; 
 	position: relative;
 }
-.ds-img{
+.designer-img{
 	width: 3.2rem;
 	height: 3.2rem;
 	float: left;
   border-radius: 50%;
   overflow: hidden;
 }
-.ds-img img{
+.designer-img img{
 	width: 3.2rem;
 }
-.ds-name{
+.designer-name{
 	float: left;
 	margin-left: 1rem;
 }
@@ -411,49 +470,49 @@
   right: 0.8rem;
   bottom: 0;
 }
-.ds-pieces-scroll{
+.designer-pieces-scroll{
 	width: 6rem;
 	height: 3rem;
 	background: url(../images/bottom-scroll.png) no-repeat 50% 50%;
   margin: 1.8rem auto;
 }
-.ds-pieces-scroll a{
+.designer-pieces-scroll a{
 	display: block;
 	width: 6rem;
 	height: 3rem;
 }
 
-/*ds-msg-right开始*/
-.ds-msg-right{
+/*designer-right开始*/
+.designer-right{
 	width: 40%;
 	box-sizing: border-box;
 }
 
-.ds-msg-right .more-pieces{
+.designerdesigner-right .more-pieces{
 	left: 8.2rem;
   top: 3rem;
 }
-.ds-msg-right h3{
+.designer-right h3{
 	line-height: 3.2rem;
 }
-.ds-msg-right .ds-img {
+.designer-right .designer-img {
 	width: 7.2rem;
 	height: 7.2rem;
 }
-.ds-msg-right .ds-img img{
+.designer-right .designer-img img{
 	width: 7.2rem;
 }
-.ds-msg-right p{
-	color: #999;
+.designer-right p{
+    color: #999;
 }
 .ds-carousel{
 	margin-top: 3rem;
 	overflow: hidden;
 }
-.ds-carousel ul{
+.designer-carousel ul{
     position: relative;
 }
-.ds-carousel ul li{
+.designer-carousel ul li{
 	list-style: none;
 	position: absolute;
 	text-align: center;
@@ -461,52 +520,70 @@
 	background: #fff;
 	box-shadow: 0 0 3rem rgba(0,0,0,.2);
 }
-.ds-carousel ul li a{
-	display: block;
+.designer-carousel ul li a{
+    display: block;
 }
-.ds-carousel1{
+.designer-carousel1{
   z-index: 999;
   top: 0px;
   left: 0px;
 }
-.ds-carousel2{
+.designer-carousel2{
   z-index: 998;
   top:37%;
   left: 9%;
   width: 82%;
-  height: 68%;
+  height: 70%;
 }
-.ds-carousel2 a img{
-	width: 100%;
-	height: 100%;
+.designer-carousel2 a img{
+    width: 100%;
+    height: 100%;
 }
-.ds-carousel3{
+.designer-carousel3{
   z-index: 997;
   top: 52%;
   left: 15%;
   width: 70%;
-  height: 58%;
+  height: 62%;
 }
-.ds-carousel3 a img{
-	width: 100%;
-	height: 100%;
+.designer-carousel3 a img{
+    width: 100%;
+    height: 100%;
 }
-.ds-carousel-scroll{
+.designer-carousel-scroll{
   width: 6.6rem;
   height: 6.6rem;
   border-radius: 50%;
   background: #ddd;
-  margin: 0px auto;
+  margin: 0 auto;
   text-align: center;
   margin-top: 7.4rem;
   overflow: hidden;
+  cursor: pointer;
 }
-.ds-carousel-scroll a{
+.designer-carousel-scroll i{
 	display: block;
 	width: 6.6rem;
   height: 6.6rem;
 	background: url(../images/bottom-scroll0.png) no-repeat 50% 50%;
 }
+
+@media (max-width: 959px){.designer-carousel ul,.designer-carousel1{
+    height: 32rem;
+}
+}
+@media (min-width: 960px){.designer-carousel ul,.designer-carousel1{
+    height: 31.6rem;
+}
+}
+@media (min-width: 1000px){ .designer-carousel ul,.designer-carousel1{
+    height: 36.2rem;
+}
+}
+@media (min-width: 1200px){ .designer-carousel ul,.designer-carousel1{
+    height:  36.2rem;
+}
+ }
 /*designer结束*/
 
 /*main结束*/
