@@ -1,22 +1,8 @@
 $(document).ready(function () {
-  var perWidth = 1216;
-  var images = [
-    'images/carousel-img0.jpg',
-    'images/carousel-img1.jpg',
-    'images/carousel-img2.jpg',
-    'images/carousel-img3.jpg'
-  ];
-  var imagesLength = images.length;
+  var perWidth = $(".carousel-box ul li").width();
+  var imagesLength = $(".carousel-box ul li").length;
   var widthOfUL = imagesLength*perWidth;
   $(".carousel-box ul").width(widthOfUL);
-  var html = "";
-  for(var i = 0;  i < imagesLength; i++) {
-    var imageUrl = images[i];
-    html += '<li>';
-    html += '<a href=""><img src="' + imageUrl + '" alt=""></a>';
-    html += '</li>';
-  }
-  $(".carousel-box ul").html(html);
 
   $('.turn-arrow a:last').click(function (e) {
     e.preventDefault();
