@@ -16,7 +16,7 @@ a{
 	text-decoration: none;
 }
 p{
-	font-size: 12px;
+	font-size: 1.2rem;
 }
 .clearfix::before, .clearfix::after{
 	content: "";
