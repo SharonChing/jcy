@@ -47,6 +47,9 @@ div{
 	padding: 0 1rem;
 	align-items: center;;
 }
+.logo{
+    align-items:center;
+}
 .nav{
 	flex: 1;
 	padding-left: 30rem;
@@ -70,6 +73,7 @@ div{
 .nav ul li:first-child a, .nav a:hover{
   color:#FFCF46;
 }
+
 
 .search-box{
 	float: right;
@@ -129,6 +133,7 @@ div{
 	background-size: 1.2rem;
 	margin:0;
 }
+
 .login-box:hover{
     cursor: pointer;
 }
@@ -140,7 +145,7 @@ div{
     display: none;
 	position: absolute;
     right:0;
-    top: 3rem;
+    top: 5rem;
     border: 1px solid #fff;
 }
 .login-box dd a{
@@ -258,19 +263,6 @@ div{
     background: #fff;
 }
 
-.go{
-    line-height: 3.6rem;
-    background: #fff;
-    margin-top: -1.8rem;
-    position: absolute;
-    right: 4%;
-    top: 50%;
-    margin-left: -18.2rem;
-}
-.go a{
-    width: 18rem;
-    height: 3.6rem;
-}
 /*carousel结束*/
 
 /*top-box结束*/
@@ -420,7 +412,8 @@ div{
     padding: 0 1.5rem;
     color: #999;
 }
-.case p i{
+.case li p a:before{
+    content: "";
     display: block;
     width: 2rem;
     height: 3.8rem;
@@ -446,7 +439,7 @@ div{
 
 .designer{
     background: #fff;
-    height: 67.8rem;
+    height: 70.8rem;
     overflow: hidden;
 }
 .designer-title{
@@ -465,8 +458,8 @@ div{
 }
 
 .designer-list{
-    height: 22.6rem;
-    padding:0 2rem;
+    height: 21.6rem;
+    padding:0 1rem;
     border-bottom:1px  dotted  #ddd;
 }
 .designer-list:nth-child(3){
@@ -611,19 +604,19 @@ div{
 }
 
 @media (max-width: 95.9rem){.designer-carousel ul,.designer-carousel1{
-    height: 32rem;
+    height: 36rem;
 }
 }
 @media (min-width: 96rem){.designer-carousel ul,.designer-carousel1{
-    height: 31.6rem;
+    height: 29.6rem;
 }
 }
 @media (min-width: 108.6rem){ .designer-carousel ul,.designer-carousel1{
-    height: 33.4rem;;
+    height: 28.1rem;;
 }
 }
 @media (min-width: 120rem){ .designer-carousel ul,.designer-carousel1{
-    height:  36.2rem;
+    height:  26.6rem;
 }
  }
 /*designer结束*/z
