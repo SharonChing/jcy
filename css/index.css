@@ -1,12 +1,4 @@
 
-*{
-	margin: 0px;
-	padding: 0px;
-}
- li{
- 	list-style: none;
- }
-
 @media (max-width: 959px){.topbar,.navbar,.main,.service,.footer-nav,.message{
 	width: 959px;
 	margin: 0 auto;
@@ -31,7 +23,7 @@
 	overflow: hidden;
 }
 }
-@media (min-width: 1200){ .topbar,.navbar,.main,.service,.footer-nav,.message{
+@media (min-width: 1200px){ .topbar,.navbar,.main,.service,.footer-nav,.message{
 	width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -61,19 +53,19 @@
 	display: none;
 	position: absolute;
 	width: 28%;
-	padding: 10px;
+	padding: 1rem;
 	border: 1px solid #ddd;
 	z-index: 1999;
 	background: #fff;
 }
 .topbar-location dt i{
 	float: left;
-	width: 16px;
-	height:25px;
+	width: 1.6;
+	height:2.5rem;
 	display: block;
-	margin-top: 7px;
+	margin-top: 0.7rem;
 	background: url(../images/add0.png) no-repeat ;
-	background-size: 14px;
+	background-size: 1.4rem;
 }
 .topbar-location dt:hover~dd{
 	display: block;
@@ -83,7 +75,7 @@
 }
 .topbar-location dd li a{
 	display: block;
-	padding: 5px 10px;
+	padding: 0.5rem 1rem;
 }
 .topbar-login{
 	float:right;
@@ -136,10 +128,10 @@
 }
 .nav a {
     display: block;
-    padding: 0 10px;
+    padding: 0 1rem;
     color: #999;
-    line-height: 30px;
-    height: 30px;
+    line-height: 3rem;
+    height: 3rem;
 }
 .nav ul li:first-child a,.nav a:hover{
     color:#FFCF46;
@@ -258,7 +250,7 @@
 	background: #fff;
 	margin-top: -1.5rem;
 	position: absolute;
-	right: 4%;
+	right: 12%;
 	top: 50%;
 	margin-left: -18.2rem;
 }
@@ -365,12 +357,12 @@
     flex: 1;
     width: 25%;
     text-align: center;
-    padding-right: 100px;
+    padding-right: 10rem;
     box-sizing: border-box;
 
 }
 .service ul li:last-child{
-    margin-right: 0;
+    padding-right:0;
 }
 .service ul li i{
 	display: block;
@@ -405,6 +397,8 @@
 
 .designer{
     background: #fff;
+    height: 65.8rem;
+    overflow: hidden;
 }
 .designer-title{
     text-align: center;
@@ -414,39 +408,40 @@
 }
 
 .designer-left{
-	box-sizing: border-box;
+    box-sizing: border-box;
     flex: 1;
     width:60%;
-    margin-right: 100px;
+    margin-right: 8rem;
 }
 
 .designer-list{
-	padding:0px 1rem;
+    height: 22.6rem;
+    padding:0 2rem;
     border-bottom:1px  dotted  #ddd;
 }
-.designer-list:last-child{
+.designer-list:nth-child(3){
     border: none;
 }
 .designer-list ul{
     display: flex;
-    padding: 10px 0px;
+    padding: 1rem 0;
 }
 .designer-list ul li{
     flex: 1;
     list-style: none;
     text-align: center;
     width: 33.33%;
-    padding-right: 5px;
+    padding-right: 0.5rem;
 }
 .designer-list ul li:last-child{
-    padding-right: 0px;
+    padding-right: 0;
 }
 .designer-list ul li img{
     width: 100%;
 }
 .designer-pieces{
-	margin-top:10px;
-	position: relative;
+    margin-top:2rem;
+    position: relative;
 }
 .designer-img{
 	width: 3.2rem;
@@ -474,7 +469,8 @@
 	width: 6rem;
 	height: 3rem;
 	background: url(../images/bottom-scroll.png) no-repeat 50% 50%;
-  margin: 1.8rem auto;
+  margin: 1.5rem auto;
+    cursor: pointer;
 }
 .designer-pieces-scroll a{
 	display: block;
@@ -488,7 +484,7 @@
 	box-sizing: border-box;
 }
 
-.designerdesigner-right .more-pieces{
+.designer-right .more-pieces{
 	left: 8.2rem;
   top: 3rem;
 }
@@ -504,6 +500,7 @@
 }
 .designer-right p{
     color: #999;
+    margin: 1rem 0;
 }
 .ds-carousel{
 	margin-top: 3rem;
@@ -513,7 +510,6 @@
     position: relative;
 }
 .designer-carousel ul li{
-	list-style: none;
 	position: absolute;
 	text-align: center;
 	overflow: hidden;
@@ -523,6 +519,9 @@
 .designer-carousel ul li a{
     display: block;
 }
+.designer-carousel ul li:first-child img{
+	display: block;
+}
 .designer-carousel1{
   z-index: 999;
   top: 0px;
@@ -530,29 +529,21 @@
 }
 .designer-carousel2{
   z-index: 998;
-  top:37%;
+  top:35%;
   left: 9%;
   width: 82%;
   height: 70%;
 }
-.designer-carousel2 a img{
-    width: 100%;
-    height: 100%;
-}
 .designer-carousel3{
   z-index: 997;
-  top: 52%;
+  top: 48%;
   left: 15%;
   width: 70%;
   height: 62%;
 }
-.designer-carousel3 a img{
-    width: 100%;
-    height: 100%;
-}
 .designer-carousel-scroll{
-  width: 6.6rem;
-  height: 6.6rem;
+  width: 5.6rem;
+  height: 5.6rem;
   border-radius: 50%;
   background: #ddd;
   margin: 0 auto;
@@ -563,8 +554,8 @@
 }
 .designer-carousel-scroll i{
 	display: block;
-	width: 6.6rem;
-  height: 6.6rem;
+	width: 5.6rem;
+  height: 5.6rem;
 	background: url(../images/bottom-scroll0.png) no-repeat 50% 50%;
 }
 
@@ -573,7 +564,7 @@
 }
 }
 @media (min-width: 960px){.designer-carousel ul,.designer-carousel1{
-    height: 31.6rem;
+    height: 33.4rem;
 }
 }
 @media (min-width: 1000px){ .designer-carousel ul,.designer-carousel1{

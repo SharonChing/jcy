@@ -7,7 +7,7 @@ $(document).ready(function () {
   $(".carousel-box ul").width(widthOfUL);
 
 
-  $(".turn-arrow a:first").click(function (e) {
+  $(".turn-arrow a:last").click(function (e) {
     e.preventDefault(); //阻止掉默认行为
     $(".carousel-box ul").animate({
       right: widthOfLi + "px" //向右边偏移一平
@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
   });
 
-  $(".turn-arrow a:last").click(function (e) {
+  $(".turn-arrow a:first").click(function (e) {
     e.preventDefault();
     var lastLi = $(".carousel-box ul li:last").clone(); //拷贝最后一个
     $(".carousel-box ul").prepend(lastLi); //放在最前面其实是-1的一个

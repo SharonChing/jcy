@@ -1,6 +1,6 @@
 *{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 html {
 	font-size:62.5%;
@@ -14,10 +14,14 @@ img{
 }
 a{
 	text-decoration: none;
+	display:block;
 }
 p{
 	font-size: 1.2rem;
 }
+ li{
+ 	list-style: none;
+ }
 .clearfix::before, .clearfix::after{
 	content: "";
 	display: table;
