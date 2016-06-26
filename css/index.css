@@ -275,6 +275,7 @@
 }
 .class-title h1{
 	margin-bottom:2rem;
+	font-weight: 100;
 }
 .class-title a{
 	color: #44cafd;
@@ -346,9 +347,11 @@
 
 /*service开始*/
 .service h1{
-	margin: 8rem 0;
-	text-align: center;
 	color: #f5d742;
+	margin: 8rem 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
 }
 .service ul{
 	display: flex;

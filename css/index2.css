@@ -29,7 +29,7 @@ div{
  }
 /*top-box开始*/
 .top-box{
-	height: 74rem;
+	height: 64rem;
 	position: relative;
 	background: #efefef;
 }
@@ -168,7 +168,7 @@ div{
 
 /**carousel kais**/
 .carousel{
-    height: 74rem;
+    height: 64rem;
     overflow: hidden;
     position: relative;
 }
@@ -183,7 +183,6 @@ div{
 
 .carousel-box{
 	position: relative;
-	height: 74rem;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -198,7 +197,7 @@ div{
 }
 .carousel-box ul li a img{
     width: 100%;
-    height: 74rem;
+    height: 64rem;
 }
 .turn-arrow{
   opacity: 0;
@@ -273,6 +272,8 @@ div{
 .service h1{
     margin: 8rem 0;
     text-align: center;
+    font-size: 36px;
+    font-weight: 100;
 }
 .service ul{
     display: flex;
@@ -347,6 +348,7 @@ div{
 }
 .class-title h1{
     margin-bottom:2rem;
+    font-weight: 100;
 }
 .class-title a{
     color: #44cafd;
