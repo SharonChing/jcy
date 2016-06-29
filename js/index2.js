@@ -1,8 +1,6 @@
 $(document).ready(function () {
   var liElemet = $(".carousel-box ul li");
   var ulElemet = $(".carousel-box ul");
-  var firstLi = $(".carousel-box ul li:first");
-  var lastLi = $(".carousel-box ul li:last");
   var widthOfLI = liElemet.width();
   var lengthOfLI = liElemet.length;
   var widthOfUl = widthOfLI * lengthOfLI;
@@ -15,15 +13,15 @@ $(document).ready(function () {
     };
     ulElemet.animate(property, function () {
       ulElemet.css("right", "0px");
-      ulElemet.append(firstLi.clone());
-      firstLi.remove();
+      ulElemet.append($(".carousel-box ul li:first").clone());
+      $(".carousel-box ul li:first").remove();
     });
   });
 
   $(".turn-arrow a:first").click(function (event) {
     event.preventDefault();
-    ulElemet.prepend(lastLi.clone());
-    lastLi.remove();
+    ulElemet.prepend($(".carousel-box ul li:last").clone());
+    $(".carousel-box ul li:last").remove();
     ulElemet.css('right', widthOfLI + "px");
     var property = {
       right: "0px"
