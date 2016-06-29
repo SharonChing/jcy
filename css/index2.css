@@ -548,8 +548,7 @@ div{
     color: #999;
     margin: 1rem 0;
 }
-.ds-carousel{
-    margin-top: 3rem;
+.designer-carousel{
     overflow: hidden;
 }
 .designer-carousel ul{
@@ -560,7 +559,7 @@ div{
     text-align: center;
     overflow: hidden;
     background: #fff;
-    box-shadow: 0 0 3rem rgba(0,0,0,.2);
+    box-shadow: 0 0 3rem rgba(0,0,0,.4);
 }
 .designer-carousel ul li a{
     display: block;
